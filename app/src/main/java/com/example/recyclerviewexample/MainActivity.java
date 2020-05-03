@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<Movie> list = new ArrayList<>();
         for(int i = 0; i < 100; i++){
-            list.add(String.format("안녕 %d", i));
+            list.add(new Movie(getDrawable(R.drawable.ic_launcher_background),"hello"));
         }
 
         RecyclerView recyclerView = findViewById(R.id.recycler1);
